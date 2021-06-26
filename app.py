@@ -63,12 +63,12 @@ sysBP = st.number_input(label="systolic blood pressure",min_value=1.0,
 st.write(sysBP)
 diaBP = st.number_input(label="diastolic blood pressure",min_value=1.0,
     max_value=1000.0,step=1.0,format="%.2f")
-# st.write(diaBP)
+st.write(diaBP)
 glucos = st.number_input(label="glucos level in mg/dL",min_value=1.0,
     max_value=1000.0,step=1.0,format="%.2f")
-# st.write(glucos)
+st.write(glucos)
 
-st.write("male:{} age :{}  Cigs :{}  BPMeds  : {}  prevalentStroke  : {}   prevalentHyp :{}  diabetes  : {}   totChol  : {}  sysBP  :{}   diaBP:{}  glucos :{}".format(male,age,cigsPerDay,BPMeds,prevalentStroke,prevalentHyp,diabetes,totChol,sysBP,diaBP,glucos))
+# st.write("male:{} age :{}  Cigs :{}  BPMeds  : {}  prevalentStroke  : {}   prevalentHyp :{}  diabetes  : {}   totChol  : {}  sysBP  :{}   diaBP:{}  glucos :{}".format(male,age,cigsPerDay,BPMeds,prevalentStroke,prevalentHyp,diabetes,totChol,sysBP,diaBP,glucos))
 inputs = male,age,cigsPerDay,BPMeds,prevalentStroke,prevalentHyp,diabetes,totChol,sysBP,diaBP,glucos
 InputArray = np.array(inputs)
 InputArray = InputArray.reshape(1,-1)
